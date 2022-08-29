@@ -5,5 +5,6 @@ const Box = styled.div`
   gap: 20px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 `;
 export default Box;
