@@ -7,7 +7,7 @@ import questionStore from "./Store/questionStore";
 
 function App() {
   const setCorrect = questionStore((state) => state.setCorrect);
-  const next = questionStore((state) => state.next);
+  const setQuestion = questionStore((state) => state.next);
   const { index, correct, questions } = questionStore((state) => ({
     index: state.index,
     correct: state.correct,
@@ -19,7 +19,7 @@ function App() {
       setCorrect();
     }
     console.log(index);
-    next();
+    setQuestion();
   };
 
   return (
